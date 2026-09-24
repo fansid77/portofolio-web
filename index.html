@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profesor.web.id - Jasa Pembuatan Website Profesional & Solusi Digital Bisnis</title>
+    <meta name="description" content="Solusi one-stop digital agency terpercaya di bawah PT. Cakra Multi Sinergi. Melayani pembuatan website bisnis, sistem desa digital OpenSID, branding fisik, dan infrastruktur jaringan.">
+    <meta name="keywords" content="jasa buat website, openSID desa digital, web developer indonesia, branding digital, profesor web id, cakra multi sinergi">
+    <!-- Google Fonts & FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --accent: #38bdf8;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Header & Navbar */
+        header {
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 9rem 2rem 5rem 2rem;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid #475569;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            border-color: white;
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .grid-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Trust / About Section */
+        .about {
+            background: #ffffff;
+            padding: 5rem 2rem;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about p {
+            color: var(--gray);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: #94a3b8;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">profesor.web.id</a>
+            <ul class="nav-links">
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+            </ul>
+            <a href="https://wa.me/6281234577443?text=Halo%20profesor.web.id,%20saya%20tertarik%20dengan%20jasa%20Anda." target="_blank" class="cta-btn">Konsultasi Gratis</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Solusi Digital Terpadu untuk <span>Transformasi Bisnis</span> Anda</h1>
+            <p>Pusat layanan digital profesional mulai dari pembuatan website instan, sistem informasi desa digital OpenSID, branding fisik kreatif, hingga manajemen jaringan handal.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Jelajahi Layanan</a>
+                <a href="https://wa.me/6281234577443?text=Halo%20profesor.web.id,%20saya%20ingin%20tanya%20projek%20website." target="_blank" class="btn-outline">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Layanan Unggulan Kami</h2>
+            <p>Kami hadir dengan standar kualitas terbaik untuk mendukung kemajuan bisnis dan instansi Anda.</p>
+        </div>
+        <div class="grid-services">
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Pembuatan Website Bisnis</h3>
+                <p>Membangun identitas digital bisnis Anda dengan website profesional, cepat, responsif, dan ramah SEO untuk menjangkau lebih banyak konsumen.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-landmark"></i>
+                <h3>Sistem Informasi Desa Digital</h3>
+                <p>Implementasi dan pengelolaan sistem informasi (OpenSID) yang optimal untuk transparansi layanan publik dan administrasi desa yang modern.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-id-card"></i>
+                <h3>Branding & Percetakan Digital</h3>
+                <p>Layanan cetak berkualitas tinggi mulai dari ID Card, E-Money custom, hingga atribut pendukung identitas perusahaan atau instansi Anda.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Infrastruktur Jaringan & IT</h3>
+                <p>Dukungan teknis jaringan komputer dan infrastruktur digital yang stabil untuk memastikan operasional bisnis berjalan tanpa hambatan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>Didukung oleh PT. Cakra Multi Sinergi</h2>
+            <p><strong>profesor.web.id</strong> beroperasi di bawah naungan PT. Cakra Multi Sinergi[cite: 2], berkomitmen menghadirkan layanan digital satu pintu (*one-stop digital agency*) yang solutif, inovatif, dan berorientasi pada kepuasan klien. Kami siap membantu skala usaha kecil, menengah, hingga instansi pemerintahan untuk melangkah maju ke era digital.</p>
+            <a href="https://wa.me/6281234577443?text=Halo%20PT%20Cakra%20Multi%20Sinergi,%20saya%20mau%20konsultasi%20bisnis." target="_blank" class="btn-primary">Mulai Konsultasi Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 profesor.web.id (PT. Cakra Multi Sinergi). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
