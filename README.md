@@ -39,6 +39,6 @@ Proyek dan *landing page* ini dikembangkan menggunakan teknologi web standar ind
 Tertarik bekerja sama atau ingin berkonsultasi seputar kebutuhan digital bisnis Anda? Silakan hubungi kami melalui:
 * 🌐 **Website Resmi:** [profesor.web.id](https://profesor.web.id)
 * 💬 **WhatsApp Konsultasi:** [Klik untuk Chat Langsung](https://wa.me/6281234577443?text=Halo%20profesor.web.id,%20saya%20ingin%20konsultasi.)
-
+* 🌐 **Demo Website Landing Page Portofolio:** [Klik Untuk Melihat Demo](https://fansid77.github.io/portofolio-web)
 ---
 *© 2026 profesor.web.id • All Rights Reserved.*
